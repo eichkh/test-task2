@@ -1,0 +1,18 @@
+{
+    "name": "notification-service",
+    "version": "1.0.0",
+    "scripts": {
+        "start:dev": "NODE_ENV=development npx ts-node app.ts",
+        "start:prod": "npm run build && NODE_ENV=production node dist/app.js",
+        "build": "npx tsc"
+    },
+    "license": "ISC",
+    "dependencies": {
+        "amqplib": "^0.10.4",
+        "dotenv": "^16.4.5",
+        "typescript": "^5.4.5"
+    },
+    "devDependencies": {
+        "@types/amqplib": "^0.10.5"
+    }
+}
